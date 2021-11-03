@@ -1,15 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title> Keyboard event</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Keycode Challenge</title>
 </head>
-<body>
+<body >
+   
+    <h1>Press any key</h1>
 
-<p>Press a key on the keyboard in the input field to get the Unicode character code of the pressed key.</p>
+    <section id="container">
+        <div >
+            <h2 id="keycode">35</h2>
+        </div>
+    <div id="events">
+        <div class="box">
+            <p>event.location</p>
+            <h3 id="eventLocation">0</h3>
+        </div>
 
-<input type="text" size="40" onkeypress="myFunction(event)">
+        <div class="box">
+            <p>event.which</p>
+            <h3 id="eventWhich">35</h3>
+        </div>
 
-<p id="demo"></p>
+        <div class="box">
+            <p>event.code</p>
+            <h3 id="eventCode">Space</h3>
+        </div>
 
+        <div class="box">
+            <p>event.key</p>
+            <h3 id= "eventKey">k</h3>
+        </div>
+
+    </div>
+    </section>
+
+
+  <script src="js.js"></script>  
 </body>
 </html>
